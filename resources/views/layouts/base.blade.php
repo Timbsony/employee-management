@@ -889,7 +889,7 @@ License: For each use you must have a valid license purchased only from above li
                     <div class="d-flex align-items-center flex-wrap py-2">
                         <!--begin::Search-->
 
-                        <a href="#" class="btn btn-success my-2" tooltip="New App" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">RUN PAYROLL</a>
+                        <a href="#" class="btn btn-success my-2" tooltip="New App" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Farming Inventory</a>
                         <!--end::Button-->
                     </div>
                     <!--end::Actions-->

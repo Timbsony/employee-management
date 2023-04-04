@@ -111,7 +111,7 @@ class FarmerController extends Controller
             $farmer->dob = $request->dob;
             $farmer->email = $request->email;
             $farmer->phone_number = $request->phone_number;
-            $farmer->residental_address = $request->residental_address;
+            $farmer->residential_address = $request->residential_address;
             $farmer->postal_address = $request->postal_address;
             $farmer->image = $request->image;
             $farmer->save();

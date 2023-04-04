@@ -81,7 +81,7 @@ class InventoryController extends Controller
     {
         try {
             $inventory = Inventory::find($id);
-            return view("inventories.edit")->with("farm", $inventory);
+            return view("inventories.edit")->with("inventory", $inventory);
         }catch (\Exception $exception){
             return $exception;
             toast('Failed to update,contact system administrator', 'error');

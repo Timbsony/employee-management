@@ -53,7 +53,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <label for="exampleInputEmail1" class="form-label">phone Number </label>
+                <label for="exampleInputEmail1" class="form-label">Phone Number </label>
                 <input type="text" class="form-control" name="phone_number" required >
             </div>
             <div class="col-md-6">

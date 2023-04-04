@@ -1,22 +1,12 @@
 <?php
 
-use App\Http\Controllers\AllowanceController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\BankController;
 use App\Http\Controllers\CompanyConfigsController;
 use App\Http\Controllers\FarmController;
 use App\Http\Controllers\FarmerController;
 use App\Http\Controllers\InventoryController;
-use App\Http\Controllers\LeaveTypesController;
-use App\Http\Controllers\TaxDeductionController;
-use App\Http\Controllers\CurrencyController;
-use App\Http\Controllers\DeductionController;
-use App\Http\Controllers\DepartmentController;
-use App\Http\Controllers\EmployeeController;
-use App\Http\Controllers\EmployeeDeductionController;
-use App\Http\Controllers\GradeController;
-use App\Http\Controllers\TaxController;
 use App\Http\Controllers\UserManagement;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
