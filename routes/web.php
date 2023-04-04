@@ -5,6 +5,8 @@ use App\Http\Controllers\CompanyConfigsController;
 use App\Http\Controllers\FarmController;
 use App\Http\Controllers\FarmerController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\RequisitionCashController;
+use App\Http\Controllers\RequisitionInputController;
 use App\Http\Controllers\UserManagement;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -49,3 +51,13 @@ Route::any('delete/farm/{id}',[App\Http\Controllers\FarmController::class, 'dest
 Route::resource('inventories', InventoryController::class);
 Route::any('update/inventory/{id}',[App\Http\Controllers\InventoryController::class, 'update'])->name('inventories.update');
 Route::any('delete/inventory/{id}',[App\Http\Controllers\InventoryController::class, 'destroy'])->name('inventories.destroy');
+
+/****************************** Requisition Input***************************************/
+Route::resource('requisitionInputs', RequisitionInputController::class);
+Route::any('update/requisition-input/{id}',[App\Http\Controllers\RequisitionInputController::class, 'update'])->name('requisitionInputs.update');
+Route::any('delete/requisition-input/{id}',[App\Http\Controllers\RequisitionInputController::class, 'destroy'])->name('requisitionInputs.destroy');
+
+/****************************** Requisition Cash***************************************/
+Route::resource('requisitionCash', RequisitionCashController::class);
+Route::any('update/requisition-cash/{id}',[App\Http\Controllers\RequisitionCashController::class, 'update'])->name('requisitionCash.update');
+Route::any('delete/requisition-cash/{id}',[App\Http\Controllers\RequisitionCashController::class, 'destroy'])->name('requisitionCash.destroy');

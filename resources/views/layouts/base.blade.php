@@ -142,12 +142,29 @@ License: For each use you must have a valid license purchased only from above li
 															</span>
                                                     <span class="menu-title">Farmers</span>
                                                 </a>
-                                            </div><div class="menu-item">
+                                            </div>
+                                            <div class="menu-item">
                                                 <a class="menu-link py-3" href="{{ route('farms.index') }}">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
                                                     <span class="menu-title">Farms</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu-item">
+                                                <a class="menu-link py-3" href="{{ route('requisitionInputs.index') }}">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+                                                    <span class="menu-title">Requisition Inputs</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu-item">
+                                                <a class="menu-link py-3" href="{{ route('requisitionCash.index') }}">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+                                                    <span class="menu-title">Requisition Cash</span>
                                                 </a>
                                             </div>
 
