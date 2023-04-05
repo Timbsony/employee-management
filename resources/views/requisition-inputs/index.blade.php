@@ -2,7 +2,7 @@
 
 @section('content')
     @include('sweetalert::alert')
-    <label for="exampleInputEmail1" class="form-label">Requisition Inpouts</label>
+    <label for="exampleInputEmail1" class="form-label">Requisition Inputs</label>
     <hr>
    <div align="right"><a href="{{ route('requisitionInputs.create') }}" class="btn btn-success my-2" >Create</a></div>
     <div class="py-5">
@@ -10,6 +10,7 @@
             <thead>
             <tr class="fw-bolder fs-6 text-gray-800">
                 <th>ID</th>
+                <th>Name</th>
                 <th>Amount</th>
                 <th>Reason</th>
                 <th>Loan</th>
@@ -24,6 +25,7 @@
                 <tr>
 
                     <td>{{ $item->id }}</td>
+                    <td>{{ $item->input_name }}</td>
                     <td>{{ $item->amount_requested }}</td>
                     <td>{{ $item->reason_for_request }}</td>
                     <td>{{ $item->loan_classification }}</td>

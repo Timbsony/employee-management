@@ -86,8 +86,14 @@ class FarmerController extends Controller
      */
     public function edit($id)
     {
+        try {
         $farmer = Farmer::find($id);
         return view("farmers.edit")->with("farmer", $farmer);
+            }catch (\Exception $exception){
+        return $exception;
+        toast('Failed to update,contact system administrator', 'error');
+        return redirect()->route('farmers.index');
+        }
     }
 
     /**

@@ -40,7 +40,24 @@ class RequisitionCashController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+
+            $cash = new RequisitionCash();
+            $cash->amount_requested = $request->amount_requested;
+            $cash->reason_for_request = $request->reason_for_request;
+            $cash->loan_classification = $request->loan_classification;
+            $cash->interest_rate = $request->interest_rate;
+            $cash->payment_period_months = $request->payment_period_months;
+            $cash->acknowledgement_of_debt_signed = $request->acknowledgement_of_debt_signed;
+            $cash->save();
+            toast('Successfully created Requisition Cash profile', 'success');
+            return redirect()->route('requisitionCash.index');
+
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('requisitionCash.index');
+        }
     }
 
     /**
