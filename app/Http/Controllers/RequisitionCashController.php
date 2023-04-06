@@ -79,7 +79,14 @@ class RequisitionCashController extends Controller
      */
     public function edit($id)
     {
-        //
+        try {
+            $cash = RequisitionCash::find($id);
+            return view("requisition-cash.edit")->with("cash", $cash);
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('requisitionCash.index');
+        }
     }
 
     /**
@@ -91,7 +98,24 @@ class RequisitionCashController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+
+            $cash = RequisitionCash::find($id);
+            $cash->amount_requested = $request->amount_requested;
+            $cash->reason_for_request = $request->reason_for_request;
+            $cash->loan_classification = $request->loan_classification;
+            $cash->interest_rate = $request->interest_rate;
+            $cash->payment_period_months = $request->payment_period_months;
+            $cash->acknowledgement_of_debt_signed = $request->acknowledgement_of_debt_signed;
+            $cash->save();
+            toast('Successfully created Requisition Cash profile', 'success');
+            return redirect()->route('requisitionCash.index');
+
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('requisitionCash.index');
+        }
     }
 
     /**
@@ -102,6 +126,16 @@ class RequisitionCashController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            $cash = RequisitionCash::find($id);
+            $cash->delete();
+            toast('Successfully deleted Requisition Cash profile', 'success');
+            return redirect()->route('requisitionCash.index');
+
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('requisitionCash.index');
+        }
     }
 }
