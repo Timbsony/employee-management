@@ -41,6 +41,7 @@ Route::get('/users-change-role/{id}', [UserManagement::class, 'changeRole'])->na
 Route::resource('farmers', FarmerController::class);
 Route::any('update/farmer/{id}',[App\Http\Controllers\FarmerController::class, 'update'])->name('farmers.update');
 Route::any('delete/farmer/{id}',[App\Http\Controllers\FarmerController::class, 'destroy'])->name('farmers.destroy');
+Route::get('farmer-allocate/{id}',[App\Http\Controllers\FarmerController::class, 'getFarmerId'])->name('farmers.allocate');
 
 /****************************** Farms***************************************/
 Route::resource('farms', FarmController::class);

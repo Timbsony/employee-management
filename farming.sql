@@ -38,6 +38,7 @@ create table farmer
 (
     id     int unsigned auto_increment    not null     primary key,
     surname             varchar(255)                        not null,
+    farm_id              int                                null,
     first_name          varchar(255)                        not null,
     middle_name         varchar(255)                        null,
     alias               varchar(255)                        null,

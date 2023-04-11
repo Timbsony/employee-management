@@ -41,6 +41,7 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="{{route("farmers.edit",$item->id) }}">Edit</a>
+                            <a class="dropdown-item" href="{{route("farmers.allocate",$item->id) }}">Allocate Farm</a>
                             <a class="dropdown-item" href="{{route("farmers.destroy",$item->id) }}">Delete</a>
                         </div>
                     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Farm;
 use App\Models\Farmer;
 use Illuminate\Http\Request;
 
@@ -145,6 +146,21 @@ class FarmerController extends Controller
             toast('Successfully deleted farmer profile', 'success');
             return redirect()->route('farmers.index');
 
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('farmers.index');
+        }
+    }
+
+    //Farmer Id to allocate
+    public function getFarmerId($id)
+    {
+        try {
+            $farms= Farm::all();
+            $farmer = Farmer::find($id);
+            return view("farmers.allocate")->with("farmer", $farmer)
+                ->with("farms", $farms);
         }catch (\Exception $exception){
             return $exception;
             toast('Failed to update,contact system administrator', 'error');
