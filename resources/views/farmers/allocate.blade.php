@@ -38,9 +38,11 @@
             <div class="col-md-6">
                 <label for="exampleInputPassword1" class="form-label">Farms</label>
                 <select class="form-control" name="farm_id" required="" >
-                    @foreach ($farms as $farm)
+                @foreach ($farms as $farm)
                         <option value="{{$farm->id}}" selected="">{{$farm->business_name}}</option>
                     @endforeach
+                    <option selected="">Please Choose</option>
+
                 </select>
             </div>
         </div>
