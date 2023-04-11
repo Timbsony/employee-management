@@ -12,6 +12,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Surname</th>
+                <th>Farm</th>
                 <th>Middle Name</th>
                 <th>Gender</th>
                 <th>Email</th>
@@ -28,6 +29,9 @@
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->first_name }}</td>
                 <td>{{ $item->surname }}</td>
+                <td>@if($item->farm_id != null)
+                    {{  \App\Models\Farm::find($item->farm_id)->business_name}}
+                @endif
                 <td>{{ $item->middle_name }}</td>
                 <td>{{ $item->gender }}</td>
                 <td>{{ $item->email }}</td>
