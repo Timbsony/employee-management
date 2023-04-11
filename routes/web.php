@@ -42,6 +42,7 @@ Route::resource('farmers', FarmerController::class);
 Route::any('update/farmer/{id}',[App\Http\Controllers\FarmerController::class, 'update'])->name('farmers.update');
 Route::any('delete/farmer/{id}',[App\Http\Controllers\FarmerController::class, 'destroy'])->name('farmers.destroy');
 Route::get('farmer-allocate/{id}',[App\Http\Controllers\FarmerController::class, 'getFarmerId'])->name('farmers.allocate');
+Route::any('farmer-assign/{id}',[App\Http\Controllers\FarmerController::class, 'assignFarm'])->name('farmers.assign');
 
 /****************************** Farms***************************************/
 Route::resource('farms', FarmController::class);

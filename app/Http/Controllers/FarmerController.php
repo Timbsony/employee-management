@@ -167,4 +167,33 @@ class FarmerController extends Controller
             return redirect()->route('farmers.index');
         }
     }
+
+    public function assignFarm(Request $request, $id)
+    {
+
+        try {
+            $farmer = Farmer::find($id);
+            $farmer->surname = $request->surname;
+            $farmer->farm_id = $request->farm_id;
+            $farmer->first_name = $request->first_name;
+            $farmer->middle_name = $request->middle_name;
+            $farmer->alias = $request->alias;
+            $farmer->national_id = $request->national_id;
+            $farmer->gender = $request->gender;
+            $farmer->dob = $request->dob;
+            $farmer->email = $request->email;
+            $farmer->phone_number = $request->phone_number;
+            $farmer->residential_address = $request->residential_address;
+            $farmer->postal_address = $request->postal_address;
+            $farmer->image = $request->image;
+            $farmer->save();
+            toast('Successfully assigned farmer profile', 'success');
+            return redirect()->route('farmers.index');
+
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('farmers.index');
+        }
+    }
 }

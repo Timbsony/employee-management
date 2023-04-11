@@ -5,8 +5,7 @@
 
     <label for="exampleInputEmail1" class="form-label">Allocate Farm</label>
     <hr>
-
-    <form method="POST" action="{{ route('farmers.update', $farmer->id) }}" enctype="multipart/form">
+    <form method="POST" action="{{ route('farmers.assign', $farmer->id) }}" enctype="multipart/form">
         @csrf
 
         <table class="table table-row-dashed table-row-gray-300 gy-7" id="example">
@@ -46,6 +45,18 @@
             </div>
         </div>
 
+        <input type="text" class="form-control" name="first_name" value="{{$farmer->first_name}}" hidden required>
+        <input type="text" class="form-control" name="surname" value="{{$farmer->surname}}" hidden required>
+        <input type="text" class="form-control" name="middle_name" value="{{$farmer->middle_name}}" hidden >
+        <input type="text" class="form-control" name="alias" value="{{$farmer->alias}}" hidden required>
+        <input type="text" class="form-control" name="national_id" value="{{$farmer->national_id}}" hidden required>
+        <input type="text" class="form-control" name="gender" value="{{$farmer->gender}}" hidden required>
+        <input type="email" class="form-control" name="email" value="{{$farmer->email}}" hidden required>
+        <input type="date" class="form-control" name="dob" value="{{$farmer->dob}}" hidden required>
+        <input type="text" class="form-control" name="phone_number" value="{{$farmer->phone_number}}" hidden required>
+        <input type="text" class="form-control" name="residential_address" value="{{$farmer->residential_address}}" hidden required>
+        <input type="text" class="form-control" name="postal_address" value="{{$farmer->postal_address}}" hidden >
+        <input type="file" class="form-control" name="image" value="{{$farmer->image}}" hidden >
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
