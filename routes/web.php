@@ -48,6 +48,7 @@ Route::any('farmer-assign/{id}',[App\Http\Controllers\FarmerController::class, '
 Route::resource('farms', FarmController::class);
 Route::any('update/farm/{id}',[App\Http\Controllers\FarmController::class, 'update'])->name('farms.update');
 Route::any('delete/farm/{id}',[App\Http\Controllers\FarmController::class, 'destroy'])->name('farms.destroy');
+Route::post('search/farm',[App\Http\Controllers\FarmController::class, 'searchFarm'])->name('farms.search');
 
 /****************************** Inventory***************************************/
 Route::resource('inventories', InventoryController::class);

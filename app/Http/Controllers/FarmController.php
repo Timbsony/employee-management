@@ -137,4 +137,22 @@ class FarmController extends Controller
             return redirect()->route('farms.index');
         }
     }
+
+    //Search Farm
+    public function searchFarm(Request $request){
+        try {
+            if ($request->filled('business_name')) {
+                $farms = Farm::where('business_name', 'like', '%' . request('business_name') . '%')->get();
+               //dd($farms);
+                return back()->with([
+                    "farms" => $farms,
+                ]);
+            }
+
+        }catch (\Exception $exception){
+            return $exception;
+            toast('Failed to update,contact system administrator', 'error');
+            return redirect()->route('farms.index');
+        }
+    }
 }
