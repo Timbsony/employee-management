@@ -148,17 +148,9 @@ class EmployeeController extends Controller
     }
 
     public function downloadPDF(Request $request){
-        /*// retreive all records from db
-        $data = Employee::all();
-        // share data to view
-        view()->share('employee',$data);
-        $pdf = PDF::loadView('pdf_view', $data);
-        // download PDF file with download method
-        return $pdf->download('pdf_file.pdf');*/
 
         $employees = Employee::all();
         view()->share('employees',$employees);
-
 
         if($request->has('download')){
             $pdf = PDF::loadView('employees.pdfview');
