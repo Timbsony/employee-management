@@ -70,7 +70,7 @@ License: For each use you must have a valid license purchased only from above li
                 },
                 {
                     extend: 'print',
-                    text: 'Send to Print',
+                    text: ' Print PDF',
                     className: 'btn btn-primary btn-xs'
                 }
             ]
@@ -123,136 +123,19 @@ License: For each use you must have a valid license purchased only from above li
                                     </div>
                                     <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
-													<span class="menu-title">Settings</span>
+													<span class="menu-title">Employees</span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>
                                         <div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
                                             <div class="menu-item">
-                                                <a class="menu-link py-3" href="{{ route('users.index') }}">
+                                                <a class="menu-link py-3" href="{{ route('employees.index') }}">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
-                                                    <span class="menu-title">Users</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="{{ route('farmers.index') }}">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-                                                    <span class="menu-title">Farmers</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="{{ route('farms.index') }}">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-                                                    <span class="menu-title">Farms</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="{{ route('requisitionInputs.index') }}">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-                                                    <span class="menu-title">Requisition Inputs</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="{{ route('requisitionCash.index') }}">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-                                                    <span class="menu-title">Requisition Cash</span>
+                                                    <span class="menu-title">Employees</span>
                                                 </a>
                                             </div>
 
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-												<span class="menu-link py-3">
-													<span class="menu-title">Inventory Management</span>
-													<span class="menu-arrow d-lg-none"></span>
-												</span>
-                                        <div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="{{ route('inventories.index') }}">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-                                                    <span class="menu-title">Inventory</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-												<span class="menu-link py-3">
-													<span class="menu-title">Bank Transfers</span>
-													<span class="menu-arrow d-lg-none"></span>
-												</span>
-                                        <div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="../dist/documentation/base/utilities.html" title="Check out over 200 in-house components, plugins and ready for use solutions" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotune/layouts/lay009.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path opacity="0.3" d="M20 14H11C10.4 14 10 13.6 10 13V10C10 9.4 10.4 9 11 9H20C20.6 9 21 9.4 21 10V13C21 13.6 20.6 14 20 14ZM21 20V17C21 16.4 20.6 16 20 16H11C10.4 16 10 16.4 10 17V20C10 20.6 10.4 21 11 21H20C20.6 21 21 20.6 21 20Z" fill="black" />
-																		<path d="M20 7H3C2.4 7 2 6.6 2 6V3C2 2.4 2.4 2 3 2H20C20.6 2 21 2.4 21 3V6C21 6.6 20.6 7 20 7ZM7 9H3C2.4 9 2 9.4 2 10V20C2 20.6 2.4 21 3 21H7C7.6 21 8 20.6 8 20V10C8 9.4 7.6 9 7 9Z" fill="black" />
-																	</svg>
-																</span>
-                                                                <!--end::Svg Icon-->
-															</span>
-                                                    <span class="menu-title">Components</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="../dist/documentation/getting-started.html" title="Check out the complete documentation" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black" />
-																		<path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black" />
-																	</svg>
-																</span>
-                                                                <!--end::Svg Icon-->
-															</span>
-                                                    <span class="menu-title">Documentation</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="#" data-kt-page="pro" title="Build your layout, preview and export HTML for server side integration" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																		<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																	</svg>
-																</span>
-                                                                <!--end::Svg Icon-->
-															</span>
-                                                    <span class="menu-title">Layout Builder
-															<span class="badge badge-pro badge-light-danger fw-bold fs-9 px-2 py-1 ms-1">Pro</span></span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link py-3" href="../dist/documentation/getting-started/changelog.html">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotune/coding/cod003.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path d="M16.95 18.9688C16.75 18.9688 16.55 18.8688 16.35 18.7688C15.85 18.4688 15.75 17.8688 16.05 17.3688L19.65 11.9688L16.05 6.56876C15.75 6.06876 15.85 5.46873 16.35 5.16873C16.85 4.86873 17.45 4.96878 17.75 5.46878L21.75 11.4688C21.95 11.7688 21.95 12.2688 21.75 12.5688L17.75 18.5688C17.55 18.7688 17.25 18.9688 16.95 18.9688ZM7.55001 18.7688C8.05001 18.4688 8.15 17.8688 7.85 17.3688L4.25001 11.9688L7.85 6.56876C8.15 6.06876 8.05001 5.46873 7.55001 5.16873C7.05001 4.86873 6.45 4.96878 6.15 5.46878L2.15 11.4688C1.95 11.7688 1.95 12.2688 2.15 12.5688L6.15 18.5688C6.35 18.8688 6.65 18.9688 6.95 18.9688C7.15 18.9688 7.35001 18.8688 7.55001 18.7688Z" fill="black" />
-																		<path opacity="0.3" d="M10.45 18.9687C10.35 18.9687 10.25 18.9687 10.25 18.9687C9.75 18.8687 9.35 18.2688 9.55 17.7688L12.55 5.76878C12.65 5.26878 13.25 4.8687 13.75 5.0687C14.25 5.1687 14.65 5.76878 14.45 6.26878L11.45 18.2688C11.35 18.6688 10.85 18.9687 10.45 18.9687Z" fill="black" />
-																	</svg>
-																</span>
-                                                                <!--end::Svg Icon-->
-															</span>
-                                                    <span class="menu-title">Changelog v1.0.0</span>
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -837,45 +720,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <span class="fs-5 fw-bold text-gray-800 mb-0">License</span>
                                                 </a>
                                             </div>
-                                            <!--end:Item-->
-                                            <!--begin:Item-->
-{{--                                            <div class="col-6">--}}
-{{--                                                <a href="../dist/general/about.html" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end">--}}
-{{--                                                    <span class="fs-5 fw-bold text-gray-800 mb-0">My Profile</span>--}}
-{{--                                                </a>--}}
-{{--                                            </div>--}}
-                                            <!--end:Item-->
-                                            <!--begin:Item-->
-{{--                                            <div class="col-6">--}}
-{{--                                                <a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light">--}}
-{{--                                                    <!--begin::Svg Icon | path: icons/duotune/finance/fin009.svg-->--}}
-{{--                                                    <span class="svg-icon svg-icon-3x svg-icon-success mb-2">--}}
-{{--																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">--}}
-{{--																	<path opacity="0.3" d="M15.8 11.4H6C5.4 11.4 5 11 5 10.4C5 9.80002 5.4 9.40002 6 9.40002H15.8C16.4 9.40002 16.8 9.80002 16.8 10.4C16.8 11 16.3 11.4 15.8 11.4ZM15.7 13.7999C15.7 13.1999 15.3 12.7999 14.7 12.7999H6C5.4 12.7999 5 13.1999 5 13.7999C5 14.3999 5.4 14.7999 6 14.7999H14.8C15.3 14.7999 15.7 14.2999 15.7 13.7999Z" fill="black" />--}}
-{{--																	<path d="M18.8 15.5C18.9 15.7 19 15.9 19.1 16.1C19.2 16.7 18.7 17.2 18.4 17.6C17.9 18.1 17.3 18.4999 16.6 18.7999C15.9 19.0999 15 19.2999 14.1 19.2999C13.4 19.2999 12.7 19.2 12.1 19.1C11.5 19 11 18.7 10.5 18.5C10 18.2 9.60001 17.7999 9.20001 17.2999C8.80001 16.8999 8.49999 16.3999 8.29999 15.7999C8.09999 15.1999 7.80001 14.7 7.70001 14.1C7.60001 13.5 7.5 12.8 7.5 12.2C7.5 11.1 7.7 10.1 8 9.19995C8.3 8.29995 8.79999 7.60002 9.39999 6.90002C9.99999 6.30002 10.7 5.8 11.5 5.5C12.3 5.2 13.2 5 14.1 5C15.2 5 16.2 5.19995 17.1 5.69995C17.8 6.09995 18.7 6.6 18.8 7.5C18.8 7.9 18.6 8.29998 18.3 8.59998C18.2 8.69998 18.1 8.69993 18 8.79993C17.7 8.89993 17.4 8.79995 17.2 8.69995C16.7 8.49995 16.5 7.99995 16 7.69995C15.5 7.39995 14.9 7.19995 14.2 7.19995C13.1 7.19995 12.1 7.6 11.5 8.5C10.9 9.4 10.5 10.6 10.5 12.2C10.5 13.3 10.7 14.2 11 14.9C11.3 15.6 11.7 16.1 12.3 16.5C12.9 16.9 13.5 17 14.2 17C15 17 15.7 16.8 16.2 16.4C16.8 16 17.2 15.2 17.9 15.1C18 15 18.5 15.2 18.8 15.5Z" fill="black" />--}}
-{{--																</svg>--}}
-{{--															</span>--}}
-{{--                                                    <!--end::Svg Icon-->--}}
-{{--                                                    <span class="fs-5 fw-bold text-gray-800 mb-0">Finance</span>--}}
-{{--                                                    <span class="fs-7 text-gray-400">Credit &amp; Payments</span>--}}
-{{--                                                </a>--}}
-{{--                                            </div>--}}
-                                            <!--end:Item-->
                                         </div>
-                                        <!--end:Nav-->
-                                        <!--begin::View more-->
-{{--                                        <div class="py-2 text-center border-top">--}}
-{{--                                            <a href="../dist/account/activity.html" class="btn btn-color-gray-600 btn-active-color-primary">View All--}}
-{{--                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->--}}
-{{--                                                <span class="svg-icon svg-icon-5">--}}
-{{--														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">--}}
-{{--															<rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />--}}
-{{--															<path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />--}}
-{{--														</svg>--}}
-{{--													</span>--}}
-{{--                                                <!--end::Svg Icon--></a>--}}
-{{--                                        </div>--}}
-                                        <!--end::View more-->
                                     </div>
                                     <!--end::Menu-->
                                     <!--end::Menu wrapper-->
@@ -898,7 +743,7 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin::Title-->
                     <h3 class="text-white fw-bolder fs-2qx me-5">
                         @php
-                            $name = \App\Models\User::where('id',Auth::user()->name)->first();
+                            $name = "Petros Timburwa";
                             echo $name;
                         @endphp</h3>
                     <!--begin::Title-->
@@ -906,7 +751,7 @@ License: For each use you must have a valid license purchased only from above li
                     <div class="d-flex align-items-center flex-wrap py-2">
                         <!--begin::Search-->
 
-                        <a href="#" class="btn btn-success my-2" tooltip="New App" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Farming Inventory</a>
+                        <a href="#" class="btn btn-success my-2" tooltip="New App" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Employee Management</a>
                         <!--end::Button-->
                     </div>
                     <!--end::Actions-->

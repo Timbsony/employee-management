@@ -15,7 +15,7 @@
             </h6>
         </div>
         <div class="row">
-            <input type="text" class="form-control" name="business_name" placeholder="Enter Farm Name" >
+            <input type="text" class="form-control" name="business_name" placeholder="Enter Farm Name" required >
         </div>
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
